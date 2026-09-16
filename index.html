@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Anas Aboelazm — Data Analyst and Computer Science student specializing in Excel, SQL, Python and Power BI." />
+  <title>Anas Aboelazm | Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#020b18;--bg2:#06172a;--card:#071c32;--line:#0b4b78;--blue:#1687ff;--blue2:#42b6ff;--text:#f5f8ff;--muted:#a8c1dd;--green:#20d6a2;}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 72% 38%,#082b49 0%,var(--bg) 42%,#010711 100%);color:var(--text);line-height:1.6}
+    a{color:inherit;text-decoration:none}.container{width:min(1400px,94%);margin:auto}
+    header{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:10}
+    .brand{display:flex;align-items:center;gap:12px}.brand-mark{font-size:40px;font-weight:800;font-style:italic;line-height:1;color:#2e8fff}.brand-line{width:1px;height:34px;background:#2876ad}.brand-name{font-weight:700;font-size:18px}.brand-role{font-size:11px;color:#aac2dc;margin-top:2px}
+    nav{display:flex;gap:30px;color:#b9cce0;font-size:13px}nav a{transition:.2s}nav a:hover,nav a.active{color:#29a1ff}
+    .talk{background:linear-gradient(135deg,#1174f7,#1760d6);padding:12px 21px;border-radius:10px;font-weight:600;font-size:13px;box-shadow:0 8px 25px #006dff24}
+    .hero{min-height:calc(100vh - 82px);display:grid;grid-template-columns:minmax(0,1.08fr) minmax(500px,.92fr);align-items:center;gap:0;padding:20px 0 20px;position:relative;overflow:visible}
+    .hero:after{content:"";position:absolute;inset:auto -15% 0 35%;height:62%;background:radial-gradient(circle,#0d4b77 0%,transparent 68%);opacity:.38;pointer-events:none}
+    .hero-copy{position:relative;z-index:2}.eyebrow{letter-spacing:5px;color:#27a8ff;font-size:12px;font-weight:600;margin-bottom:25px}.hero h1{font-size:clamp(52px,4.55vw,72px);line-height:1.03;letter-spacing:-2.8px;margin-bottom:26px;white-space:nowrap}.hero h1 span{color:#1489ff}.lead{max-width:720px;color:#afc6df;font-size:17px;line-height:1.75;margin-bottom:32px}
+    .actions{display:flex;gap:14px;flex-wrap:wrap}.btn{padding:15px 25px;border-radius:10px;border:1px solid #168dff;color:#fff;font-weight:600;font-size:14px}.btn.primary{background:linear-gradient(135deg,#1589ff,#0966e8);border-color:transparent}.btn.secondary{background:#031224}
+    .pill-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:42px}.pill{display:flex;align-items:center;gap:12px;padding:14px 12px;border:1px solid #0b3f68;background:#04172a;border-radius:12px}.icon{width:42px;height:42px;border-radius:10px;display:grid;place-items:center;background:#06294a;color:#25a2ff;font-size:20px;font-weight:700}.pill strong{display:block;font-size:13px}.pill small{display:block;color:#91abc7;font-size:10px;margin-top:2px}
+    .hero-photo{position:relative;z-index:2;display:flex;justify-content:flex-end;align-items:center;min-height:calc(100vh - 105px);overflow:visible}.photo-wrap{position:relative;width:auto;height:min(780px,calc(100vh - 105px));display:flex;justify-content:flex-end;align-items:center}.photo-wrap:before{content:"";position:absolute;width:110%;height:92%;right:-5%;top:4%;border-radius:50%;background:radial-gradient(circle,#1b5d8b55,transparent 65%);filter:blur(24px)}.photo{position:relative;width:auto;height:100%;max-width:none;object-fit:contain;display:block;z-index:1}
+    .scribble{position:absolute;right:-25px;top:115px;z-index:3;color:#2ca9ff;font-size:27px;line-height:1.25;transform:rotate(-5deg);font-weight:500;font-family:cursive}.scribble:after{content:"";display:block;width:135px;height:20px;border-bottom:2px solid #2ca9ff;border-radius:50%;transform:rotate(-8deg);margin-left:5px}
+    .quote{border-left:3px solid #168cff;padding-left:20px;color:#abc5df;font-style:italic;font-size:16px;margin:34px 0 10px}.section{padding:100px 0}.section-title{font-size:36px;margin-bottom:12px}.section-sub{color:#91aac5;max-width:700px;margin-bottom:38px}
+    .about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.glass{background:linear-gradient(145deg,#061a2eaa,#031120cc);border:1px solid #0b4169;border-radius:18px;padding:30px;box-shadow:0 20px 50px #0004}.glass p{color:#a9c1da}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.stat{padding:24px;border:1px solid #0b4169;border-radius:15px;background:#06192c}.stat b{font-size:27px;color:#25a3ff}.stat span{display:block;color:#93aec9;font-size:13px}
+    .skills{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.skill{padding:25px;border-radius:16px;border:1px solid #0b4169;background:#05192d}.skill .big{font-size:31px;margin-bottom:13px}.skill h3{font-size:17px}.skill p{color:#8faac6;font-size:12px;margin-top:5px}.level{margin-top:15px;height:5px;background:#102d47;border-radius:10px;overflow:hidden}.level i{display:block;height:100%;background:linear-gradient(90deg,#087bff,#36b9ff);border-radius:10px}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}.project h3{font-size:22px;margin-bottom:8px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}.tag{font-size:11px;padding:5px 9px;border-radius:999px;background:#062746;color:#72c7ff;border:1px solid #0b4b78}.project a{color:#35a9ff;font-size:13px;font-weight:600}
+    .timeline{border-left:1px solid #14547f;padding-left:24px}.timeline-item{position:relative;margin-bottom:30px}.timeline-item:before{content:"";position:absolute;left:-30px;top:8px;width:10px;height:10px;border-radius:50%;background:#168cff;box-shadow:0 0 0 5px #082943}.timeline-item h3{font-size:19px}.timeline-item .date{color:#35a9ff;font-size:12px;margin:3px 0 7px}.timeline-item p{color:#98b1cb;font-size:14px}
+    footer{padding:28px 0;border-top:1px solid #0a3150;color:#7895b1;font-size:12px;text-align:center}.contact-card h3{font-size:22px;margin-bottom:14px}.contact-list{display:grid;gap:13px}.contact-list a{color:#b9cee4}.contact-list a:hover{color:#29a1ff}
+    .mobile-toggle{display:none;background:none;border:0;color:white;font-size:25px}
+    @media(max-width:1100px){.hero h1{white-space:normal}.hero{grid-template-columns:1fr .9fr}.hero-photo{min-height:650px}.photo-wrap{height:650px}.scribble{right:-5px}}
+    @media(max-width:900px){nav,.talk{display:none}.mobile-toggle{display:block}.hero{grid-template-columns:1fr;padding-top:30px}.hero-photo{order:-1;min-height:auto;justify-content:center}.photo-wrap{height:auto;width:min(430px,85%)}.photo{width:100%;height:auto}.scribble{right:-10px;top:80px;font-size:20px}.pill-row,.skills{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid,.projects{grid-template-columns:1fr}.section{padding:75px 0}}
+    @media(max-width:520px){.brand-name{font-size:15px}.hero h1{font-size:43px;white-space:normal}.lead{font-size:15px}.pill-row,.skills{grid-template-columns:1fr}.photo-wrap{width:95%}.scribble{right:0}.actions .btn{width:100%;text-align:center}.section-title{font-size:30px}}
+  </style>
+</head>
+<body>
+<header class="container">
+  <a href="#home" class="brand"><div class="brand-mark">A</div><div class="brand-line"></div><div><div class="brand-name">Anas Aboelazm</div><div class="brand-role">Data Analyst | CS Student</div></div></a>
+  <nav><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
+  <a class="talk" href="mailto:anasabouelazm22@gmail.com">Let's Talk</a><button class="mobile-toggle" aria-label="Open menu">☰</button>
+</header>
+
+<main id="home">
+<section class="hero container">
+  <div class="hero-copy">
+    <div class="eyebrow">DATA → INSIGHTS → IMPACT</div>
+    <h1>From Raw Data<br>to <span>Real Business Value</span></h1>
+    <p class="lead">I analyze, visualize and translate data into clear insights and actionable recommendations to help businesses grow and make smarter decisions.</p>
+    <div class="actions"><a class="btn primary" href="#projects">View My Projects →</a><a class="btn secondary" href="mailto:anasabouelazm22@gmail.com?subject=CV%20Request">Contact Me ↗</a></div>
+    <div class="pill-row">
+      <div class="pill"><div class="icon">▥</div><div><strong>Data Analysis</strong><small>Clean & Analyze</small></div></div>
+      <div class="pill"><div class="icon">♧</div><div><strong>Business Insights</strong><small>Find Opportunities</small></div></div>
+      <div class="pill"><div class="icon">◎</div><div><strong>Better Decisions</strong><small>Actionable Results</small></div></div>
+      <div class="pill"><div class="icon">♙</div><div><strong>Real Impact</strong><small>Business Value</small></div></div>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-wrap"><img class="photo" src="assets/anas-original.jpeg" alt="Anas Aboelazm standing in front of a city at night"><div class="scribble">Turning<br>Data into<br>Opportunities</div></div>
+  </div>
+</section>
+
+<section id="about" class="section container"><h2 class="section-title">About Me</h2><p class="section-sub">Computer Science student at Ain Shams University, passionate about data analysis, business intelligence and turning data into practical business value.</p><div class="about-grid"><div class="glass"><p>I’m Anas Aboelazm, a Computer Science student at the Faculty of Computer Science and Information Systems, Ain Shams University, expected to graduate in 2028. I enjoy working with data and connecting analysis with business ideas and recommendations.</p><br><p>My focus is currently general Data Analysis and Business Intelligence, with an interest in exploring areas such as supply chain analytics as I continue to grow.</p></div><div class="stats"><div class="stat"><b>2028</b><span>Expected Graduation</span></div><div class="stat"><b>B2</b><span>English — Upper-Intermediate</span></div><div class="stat"><b>4+</b><span>Core Data Tools</span></div><div class="stat"><b>6 mo.</b><span>Branch Management Experience</span></div></div></div></section>
+
+<section id="skills" class="section container"><h2 class="section-title">Skills</h2><p class="section-sub">Tools I use to clean data, explore patterns, build visualizations and communicate insights.</p><div class="skills">
+<div class="skill"><div class="big">▣</div><h3>Excel</h3><p>Advanced — Analysis & Dashboards</p><div class="level"><i style="width:92%"></i></div></div>
+<div class="skill"><div class="big">◉</div><h3>SQL</h3><p>Intermediate — Queries & Analysis</p><div class="level"><i style="width:75%"></i></div></div>
+<div class="skill"><div class="big">🐍</div><h3>Python</h3><p>Intermediate — Data Analysis & Visualization</p><div class="level"><i style="width:78%"></i></div></div>
+<div class="skill"><div class="big">▥</div><h3>Power BI</h3><p>Intermediate — Interactive Dashboards</p><div class="level"><i style="width:75%"></i></div></div>
+</div></section>
+
+<section id="projects" class="section container"><h2 class="section-title">Projects</h2><p class="section-sub">Practical projects where I turn datasets into findings, visualizations and business recommendations.</p><div class="projects">
+<div class="glass project"><h3>Superstore Data Analysis</h3><p>Analyzed sales, profitability, customers, products, discounts and regional performance using Python. Built visualizations and a Python dashboard to communicate business insights and recommendations.</p><div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">EDA</span></div><a href="https://github.com/anasabouelazm/superstore-data-analysis" target="_blank" rel="noopener">View on GitHub →</a></div>
+<div class="glass project"><h3>Data Engineering Summer Training</h3><p>Completed Data Engineering summer training covering ETL/ELT concepts, data pipelines and practical data workflows. Built an ETL project as part of the training.</p><div class="tags"><span class="tag">ETL</span><span class="tag">ELT</span><span class="tag">Python</span><span class="tag">PostgreSQL</span><span class="tag">Data Pipelines</span></div><a href="#contact">Ask me about the project →</a></div>
+<div class="glass project"><h3>AI University Project</h3><p>Led a university AI project built with Python and machine learning. Coordinated team responsibilities, resolved collaboration issues and helped the team achieve 3rd place.</p><div class="tags"><span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Logistic Regression</span><span class="tag">Decision Tree</span><span class="tag">Team Leadership</span></div></div>
+<div class="glass project"><h3>Supermarket C++ Project</h3><p>A C++ supermarket management project focused on applying programming fundamentals to a practical business-style system.</p><div class="tags"><span class="tag">C++</span><span class="tag">Programming</span><span class="tag">Business System</span></div></div>
+</div></section>
+
+<section id="experience" class="section container"><h2 class="section-title">Experience & Leadership</h2><p class="section-sub">Experience that strengthened my communication, teamwork, leadership and problem-solving skills.</p><div class="glass timeline"><div class="timeline-item"><h3>Branch Manager — Arabian Academy, Cairo</h3><div class="date">6 months</div><p>Managed branch responsibilities including customer communication, course coordination, money handling, people management and daily organization. Handled customer complaints and contributed to improving organization and reducing operational problems.</p></div><div class="timeline-item"><h3>University AI Project — Team Leader</h3><div class="date">University Project</div><p>Led the team, assigned responsibilities according to each member’s strengths, helped resolve conflicts and improved collaboration so the team could deliver the project successfully.</p></div></div></section>
+
+<section id="contact" class="section container"><h2 class="section-title">Let's Work Together</h2><p class="section-sub">Let’s turn your data into actionable insights.</p><div class="contact-grid"><div class="glass contact-card"><h3>Get in touch</h3><div class="contact-list"><a href="mailto:anasabouelazm22@gmail.com">✉ anasabouelazm22@gmail.com</a><a href="tel:+201014139009">☎ +20 101 413 9009</a><a href="https://www.linkedin.com/in/anas-ahmed-56211a335" target="_blank" rel="noopener">in LinkedIn</a><a href="https://github.com/anasabouelazm" target="_blank" rel="noopener">◈ GitHub</a></div></div><div class="glass"><h3>What I can help with</h3><p>Data Cleaning · Exploratory Data Analysis · Excel Analysis · SQL Analysis · Python Data Analysis · Power BI Dashboards · Business Reports · KPI Dashboards · Data Visualization · Business Insights & Recommendations</p></div></div></section>
+</main>
+<footer>© 2026 Anas Aboelazm · Data Analyst | CS Student</footer>
+<script>
+  const toggle=document.querySelector('.mobile-toggle'), nav=document.querySelector('nav');
+  toggle?.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='75px';nav.style.right='4%';nav.style.flexDirection='column';nav.style.background='#031120';nav.style.padding='18px';nav.style.border='1px solid #0b4169';nav.style.borderRadius='12px'});
+  const links=[...document.querySelectorAll('nav a')]; const sections=[...document.querySelectorAll('main section[id]')];
+  window.addEventListener('scroll',()=>{let current='home'; sections.forEach(s=>{if(scrollY>=s.offsetTop-180) current=s.id});links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))});
+</script>
+</body>
+</html>
